@@ -33,6 +33,13 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['192.168.0.140']
 ADMIN_PATH = os.environ.get("ADMIN_PATH", "admin")
+SESSION_COOKIE_PATH = f'/{ADMIN_PATH}/'
+CSRF_COOKIE_PATH = f'/{ADMIN_PATH}/'
+
+
+
+
+
 
 # Application definition
 
