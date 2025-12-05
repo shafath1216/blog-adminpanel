@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-cr4rv(4h3_4l+6+)oqig%@2!4t51bpr(3jt&t!yx)6fr%o4_2#
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.0.140']
+ALLOWED_HOSTS = ['*']
 ADMIN_PATH = os.environ.get("ADMIN_PATH", "admin")
 SESSION_COOKIE_PATH = f'/{ADMIN_PATH}/'
 CSRF_COOKIE_PATH = f'/{ADMIN_PATH}/'
@@ -133,7 +133,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = '/home/shafath/blog-adminpanel/static/'
+STATIC_ROOT = '/app/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
